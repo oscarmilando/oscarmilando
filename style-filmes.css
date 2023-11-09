@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'displaying';
+    src: url('../fontes/displaying.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue bold';
+    src: url('../fontes/BebasNeue\ Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Boloo-Regular';
+    src: url('../fontes/Baloo-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root{
+    --cor0: #0576bb;
+    --cor1: #f48a22;
+    --cor2: #fefefe;
+    --cor3: #a8a9ab;
+    --cor4: #001320;
+    --cor5: #ec1743;
+    --cor6: #46b6f7;
+    --cor7: #fc7c95;
+
+    --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo-principal:'displaying';
+    --fonte-destaque:'Boloo-Regular';
+    --fonte-outra:'Bebas Neue bold';
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor0));
+    text-align: center;
+    padding: 40px;
+
+}
+header h1{
+    color: #fefefe;
+    font-family: var(--fonte-titulo-principal);
+    margin-bottom:20px ;
+}
+header > p{
+    color: #fefefe;
+    font-family: var(--fonte-destaque);
+}
+nav{
+    background-color:var(--cor0);
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    transition-duration: 1s;
+    font-family: var(--fonte-destaque);
+
+}
+nav a:hover{
+    background-color: var(--cor5);
+    border-radius: 10px;
+}
+nav > img {
+    width: 15px;
+}
+img .home{
+    width: 15px;
+}
+main{
+    background-color: var(--cor2);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+article{
+    padding: 10px;
+}
+article h1{
+    color:var(--cor5);
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to right, var(--cor7), transparent);
+}
+h4{
+    padding: 10px;
+}
